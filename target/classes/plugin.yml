@@ -1,0 +1,13 @@
+name: CloudBlueRankup
+version: 1.0
+api-version: 1.20
+main: me.Sam.RankSystem.RankSystem
+description: Sams rankup plugin lol
+depend:
+  - VotingPlugin
+  - PlaceholderAPI
+  - LuckPerms
+commands:
+  rankup:
+  rankupadmin:
+  rankprefix:

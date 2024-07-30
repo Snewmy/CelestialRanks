@@ -1,0 +1,293 @@
+gui:
+  size: 36
+  backbuttonslot: 35
+  lockedbutton:
+    type: RED_STAINED_GLASS_PANE
+    glow: false
+  inprogressbutton:
+    type: EMERALD
+    glow: true
+  completedbutton:
+    type: LIME_STAINED_GLASS_PANE
+    glow: false
+Ranks:
+  Rank0:
+    info:
+      key: Rank0
+      name: Default
+      prefix: '{#7a8282}[Newbie] '
+      position: 0
+      lastrank: false
+      slot: 99 #doesn't go into gui
+      requirements:
+        vote: 0
+  Rank1:
+    info:
+      key: Rank1
+      name: Loft
+      prefix: '{#ff297e}[Loft] '
+      position: 1
+      lastrank: false
+      slot: 10
+      requirements:
+        vote: 5
+        money: 500
+    RewardList:
+      - '&7200 Claimblocks'
+      - '&710 Player Shops'
+      - '&7/near'
+      - '&7/sit'
+      - '&7Silktouch mine spawners'
+      - '&73 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Salmon, Cod, Skeleton'
+      - '&7Rabbit, Zombie, Husk'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#ff297e}[Loft]&7!'
+      - adjustbonusclaimblocks %player% 200
+      - lp user %player% promote ranks
+  Rank2:
+    info:
+      key: Rank2
+      name: Aloft
+      prefix: '{#fc193b}[Aloft] '
+      position: 2
+      lastrank: false
+      slot: 11
+      requirements:
+        vote: 15
+        money: 2500
+    RewardList:
+      - '&7500 Claimblocks'
+      - '&720 Player Shops'
+      - '&7/lay'
+      - '&7/hat'
+      - '&7Colored signs'
+      - '&74 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Horse, Zombie Pig, Enderman'
+      - '&7Drowned, Squid, TropicalFish'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#fc193b}[Aloft]&7!'
+      - adjustbonusclaimblocks %player% 500
+      - lp user %player% promote ranks
+  Rank3:
+    info:
+      key: Rank3
+      name: Swift
+      prefix: '{#c4f71b}[Swift] '
+      position: 3
+      lastrank: false
+      slot: 12
+      requirements:
+        vote: 25
+        money: 7500
+    RewardList:
+      - '&7700 Claimblocks'
+      - '&730 Player Shops'
+      - '&7/heads'
+      - '&7/workbench'
+      - '&7/crawl'
+      - '&725% mcMMO xp boost'
+      - '&72 Row /backpack'
+      - '&75 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Blaze, Creeper, Cat'
+      - '&7Polarbear, Pufferfish, Villager'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#c4f71b}[Swift]&7!'
+      - adjustbonusclaimblocks %player% 700
+      - lp user %player% promote ranks
+  Rank4:
+    info:
+      key: Rank4
+      name: Wind
+      prefix: '{#f7be20}[Wind] '
+      position: 4
+      lastrank: false
+      slot: 13
+      requirements:
+        vote: 50
+        money: 25000
+    RewardList:
+      - '&71100 Claimblocks'
+      - '&740 Player Shops'
+      - '&7/ptime'
+      - '&7/nick'
+      - '&74% /sell money boost'
+      - '&73 Row /backpack'
+      - '&76 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Bee, CaveSpider, Llama'
+      - '&7Pillager, Vex, Vindicator'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#f7be20}[Wind]&7!'
+      - adjustbonusclaimblocks %player% 1100
+      - lp user %player% promote ranks
+  Rank5:
+    info:
+      key: Rank5
+      name: Uproar
+      prefix: '{#49fc21}[Uproar] '
+      position: 5
+      lastrank: false
+      slot: 14
+      requirements:
+        vote: 75
+        money: 32500
+    RewardList:
+      - '&71500 Claimblocks'
+      - '&750 Player Shops'
+      - '&7/pweather'
+      - '&7/sell all'
+      - '&78% /sell money boost'
+      - '&74 Row /backpack'
+      - '&77 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Bat, Dolphin, Evoker, Goat'
+      - '&7Mooshroom, WanderTrader, Wolf'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#49fc21}[Uproar]&7!'
+      - adjustbonusclaimblocks %player% 1500
+      - lp user %player% promote ranks
+  Rank6:
+    info:
+      key: Rank6
+      name: Whirlwind
+      prefix: '{#24beed}[Whirlwind] '
+      position: 6
+      lastrank: false
+      slot: 15
+      requirements:
+        vote: 90
+        money: 40000
+    RewardList:
+      - '&71700 Claimblocks'
+      - '&760 Player Shops'
+      - '&7/dispose'
+      - '&7/clear'
+      - '&712% /sell money boost'
+      - '&750% mcMMO xp boost'
+      - '&75 Row /backpack'
+      - '&72 Row /itemfilter'
+      - '&78 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Donkey, Guardian, IronGolem'
+      - '&7Stray, Spider, ZombieVillager'
+      - '&7Axolotl'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#24beed}[Whirlwind]&7!'
+      - adjustbonusclaimblocks %player% 1700
+      - lp user %player% promote ranks
+  Rank7:
+    info:
+      key: Rank7
+      name: Rain
+      prefix: '{#2130ff}[Rain] '
+      position: 7
+      lastrank: false
+      slot: 16
+      requirements:
+        vote: 105
+        money: 60000
+    RewardList:
+      - '&72000 Claimblocks'
+      - '&770 Player Shops'
+      - '&7/enderchest'
+      - '&7/heal'
+      - '&c25 Minute Cooldown'
+      - '&716% /sell money boost'
+      - '&76 Row /backpack'
+      - '&73 Row /itemfilter'
+      - '&79 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Ravager, Fox, Hoglin, Tadpole'
+      - '&7Piglin, WitherSkeleton, Zoglin'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#2130ff}[Rain]&7!'
+      - adjustbonusclaimblocks %player% 2000
+      - lp user %player% promote ranks
+  Rank8:
+    info:
+      key: Rank8
+      name: Thunder
+      prefix: '{#691bfa}[Thunder] '
+      position: 8
+      lastrank: false
+      slot: 21
+      requirements:
+        vote: 120
+        money: 85000
+    RewardList:
+      - '&72500 Claimblocks'
+      - '&780 Player Shops'
+      - '&7/jump'
+      - '&7/heal other players'
+      - '&7/condense'
+      - '&7100% mcMMO xp boost'
+      - '&720% /sell money boost'
+      - '&74 Row /itemfilter'
+      - '&710 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Endermite, Illusioner, Mule'
+      - '&7MagmaCube, Zombie Horse, Frog'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#691bfa}[Thunder]&7!'
+      - adjustbonusclaimblocks %player% 2500
+      - lp user %player% promote ranks
+  Rank9:
+    info:
+      key: Rank9
+      name: Lightning
+      prefix: '{#2af7b6}[Lightning] '
+      position: 9
+      lastrank: false
+      slot: 22
+      requirements:
+        vote: 135
+        money: 120000
+    RewardList:
+      - '&73000 Claimblocks'
+      - '&790 Player Shops'
+      - '&7/rename (supports rgb)'
+      - '&724% /sell money boost'
+      - '&7Phantoms leave you alone'
+      - '&7(toggle with /nophantoms toggle)'
+      - '&75 Row /itemfilter'
+      - '&711 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Ocelot, Silverfish, Skeleton Horse'
+      - '&7Snowman, Slime, Turtle'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#2af7b6}[Lightning]&7!'
+      - adjustbonusclaimblocks %player% 3000
+      - lp user %player% promote ranks
+  Rank10:
+    info:
+      key: Rank10
+      name: Storm
+      prefix: '{#ffb133}[Storm] '
+      position: 10
+      lastrank: true
+      slot: 23
+      requirements:
+        vote: 150
+        money: 165000
+    RewardList:
+      - '&73,500 Claimblocks'
+      - '&7100 Player Shops'
+      - '&7/magiccarpet'
+      - '&7/fix (costs 5k)'
+      - '&c3 Hour Cooldown'
+      - '&730% /sell money boost'
+      - '&7200% mcMMO xp boost'
+      - '&76 Row /itemfilter'
+      - '&713 Homes'
+      - '{#56eafa}Can create pets with lead:'
+      - '&7Panda, Parrot, Phantom'
+      - '&7Strider, TraderLlama, Witch'
+      - '&7Warden'
+    RewardCommands:
+      - 'broadcast !{#56eafa}%player% &7has ranked up to {#ffb133}[Storm]&7!'
+      - adjustbonusclaimblocks %player% 3500
+      - lp user %player% promote ranks
